@@ -1,46 +1,118 @@
-# Microsoft Student Ambassador Certificate Generator
-<li>This project is designed to help Microsoft Learn Student Ambassadors easily generate certificates for participants.</li>
-<li>The output folder contains three types of files, Word file, PDF file, QR code file.</li>
-<li>By using this project, you can efficiently save time in generating certificates.</li>
-<li>First of all, if you find this project helpful, please ⭐ star this repository to show your support!</li>
+<div align="center">
 
-## 1st Step - Add the Participants name
+# certificate-generator
 
+**Automated Certificate Generation for Microsoft Learn Student Ambassadors**
 
-![Partciopent](https://github.com/Harish-Reddy-Duggempudi/MLSA_CERTIFICATE_GENERATOR/blob/af22f429bc59fca2f6def7588f7f3dfa186b5930/screenshot/Screenshot%202024-12-22%20232701.png)
+This project utilizes Python and Microsoft Word templates to generate certificates for participants in Microsoft Learn events. It simplifies the process of creating certificates by automating the task, saving time and effort. The output includes a Word document, PDF, and QR code.
 
-<li>You can write & copy pest the participant's name in the Event Participants.csv file. </li>
+[Source](https://github.com/ruthwwikreddy/certificate-generator) · Built by [Ruthwik Reddy](https://www.ruthwikreddy.live/)
 
+MIT licensed · Key technical highlight: Utilizes Python-docx and docx2pdf libraries for certificate generation.
 
+</div>
 
+---
 
+## Table of contents
 
-## 2nd Step - Modify the Event Name & Host Name
+1. [What certificate-generator does](#1-what-certificate-generator-does)
+2. [Architecture](#2-architecture)
+3. [Key Features](#3-key-features)
+4. [Prerequisites](#4-prerequisites)
+5. [Quick start](#5-quick-start)
+6. [Environment variables](#6-environment-variables)
+7. [Project Structure](#7-project-structure)
+8. [Known Limitations](#8-known-limitations)
+9. [Future Improvements](#9-future-improvements)
+10. [License and credits](#10-license-and-credits)
 
-![host name](https://github.com/Harish-Reddy-Duggempudi/MLSA_CERTIFICATE_GENERATOR/blob/af22f429bc59fca2f6def7588f7f3dfa186b5930/screenshot/Screenshot%202024-12-22%20232917.png)
+---
 
-<li>You can modify the Event name and Host name according to you.</li>
+## 1. What certificate-generator does
 
+| Capability | Detail |
+|---|---|
+| Generates certificates | Utilizes Python-docx and docx2pdf libraries to create Word documents and PDFs |
+| QR code generation | Uses a library to generate QR codes for easy scanning |
+| Automated process | Simplifies the certificate generation process by automating tasks |
 
-## 3rd step - Open Terminal
- <li>For Windows Users</li>
- 
-<code>pip install -r requirements.txt
+## 2. Architecture
+
+```
+main_certificate.py
+  |
+  |-- requirements.txt
+  |-- Templates/
+  |    |
+  |    |-- Certificate Template.docx
+  |    |-- Certificate Template - Copy.docx
+  |    |-- Event Participants.csv
+  |
+  |-- Output/
+  |    |
+  |    |-- PDF/
+  |    |    |-- Ruthwik Reddy_certificate.pdf
+  |    |-- Doc/
+  |    |    |-- Ruthwik Reddy_certificate.docx
+  |    |-- QR/
+  |    |    |-- Ruthwik Reddy_qr.png
+```
+
+## 3. Key Features
+- Automated certificate generation
+- QR code generation
+- Simplified process
+
+## 4. Prerequisites
+- Python 3.x
+- Python-docx library
+- docx2pdf library
+
+## 5. Quick start
+
+```bash
+git clone https://github.com/ruthwwikreddy/certificate-generator.git
+cd certificate-generator
+pip install -r requirements.txt
 python main_certificate.py
-</code>
+```
 
- <li>For Mac Users</li>
- 
-<code>pip3 install -r requirements.txt
-python3 main_certificate.py
-</code>
+## 6. Environment variables
+None required
 
-<li>Run this command in our Terminal </li>
+## 7. Project Structure
+```
+certificate-generator/
+  |
+  |-- main_certificate.py
+  |-- requirements.txt
+  |-- Templates/
+  |    |
+  |    |-- Certificate Template.docx
+  |    |-- Certificate Template - Copy.docx
+  |    |-- Event Participants.csv
+  |
+  |-- Output/
+  |    |
+  |    |-- PDF/
+  |    |    |-- Ruthwik Reddy_certificate.pdf
+  |    |-- Doc/
+  |    |    |-- Ruthwik Reddy_certificate.docx
+  |    |-- QR/
+  |    |    |-- Ruthwik Reddy_qr.png
+```
 
-## 4th Step - Certificate Generation is Completed! 
-<li> Check the Pdf in Output File.</li>
+## 8. Known Limitations
+- Limited customization options for templates
+- QR code generation may require additional setup
 
-# Certificate View
-![Certificate Generater](https://github.com/Harish-Reddy-Duggempudi/MLSA_CERTIFICATE_GENERATOR/blob/af22f429bc59fca2f6def7588f7f3dfa186b5930/screenshot/Screenshot%202024-12-22%20233132.png)
+## 9. Future Improvements
+- Add more customization options for templates
+- Improve QR code generation process
 
-**By Harish Reddy Duggempudi**
+## 10. License and credits
+
+Released under the **MIT License**.
+
+Designed and engineered by **[Ruthwik Reddy](https://www.ruthwikreddy.live/)** · [github.com/ruthwwikreddy/certificate-generator](https://github.com/ruthwwikreddy/certificate-generator)
